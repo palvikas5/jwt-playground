@@ -18,6 +18,8 @@
     "test": "jest"
   },
   "dependencies": {
+    "@sentry/react": "^5.27.6",
+    "@sentry/tracing": "^5.27.6",
     "jsonwebtoken": "^8.5.1",
     "next": "10.0.3",
     "react": "17.0.1",
