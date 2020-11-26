@@ -1,9 +1,13 @@
 import React from 'react';
-import { AppProps } from 'next/app';
 import Head from 'next/head';
 import { Layout } from '../Layout/Layout';
 
-function MyApp({ Component, pageProps }: AppProps) {
+interface AppProps {
+  Component: React.ComponentType;
+  pageProps: any;
+}
+
+const App = ({ Component, pageProps }: AppProps) => {
   return (
     <>
       <Head>
@@ -17,6 +21,6 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Layout>
     </>
   );
-}
+};
 
-export default MyApp;
+export default App;
