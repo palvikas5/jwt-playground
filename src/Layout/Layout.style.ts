@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { device } from '../utils/device';
 
 const GlobalStyle = createGlobalStyle`
   /**
@@ -144,12 +145,30 @@ const GlobalStyle = createGlobalStyle`
     line-height: 1;
     font-size: 1.6rem;
     font-family: 'Nunito', sans-serif;
+    background-color: #2f3b52;
   }
 
   * {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+  }
+
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    @media ${device.mobileAndAbove} {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    @media ${device.mediumAndAbove} {
+      padding-left: 40px;
+      padding-right: 40px;
+    }
   }
 `;
 

@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> should render successfully 1`] = `
+.c0 {
+  display: block;
+  color: white;
+  background-color: #3e8efa;
+  text-transform: uppercase;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 3px;
+}
+
+<div>
+  <button
+    class="c0"
+    type="button"
+  >
+    button-text
+  </button>
+</div>
+`;

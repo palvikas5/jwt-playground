@@ -4,13 +4,12 @@ import { Layout } from '../Layout';
 
 describe('layout', () => {
   it('should render successfully', () => {
-    expect.assertions(1);
+    expect.assertions(3);
 
-    const { container } = render(<Layout>Test 1</Layout>);
-    expect(container).toMatchInlineSnapshot(`
-      <div>
-        Test 1
-      </div>
-    `);
+    const { container, getByText } = render(<Layout>Test 1</Layout>);
+
+    expect(getByText('JWT')).toBeInTheDocument();
+    expect(getByText('Test 1')).toBeInTheDocument();
+    expect(container).toMatchSnapshot();
   });
 });

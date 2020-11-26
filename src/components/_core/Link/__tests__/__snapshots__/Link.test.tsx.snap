@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Link /> should render successfully 1`] = `
+.c0 {
+  display: block;
+  color: white;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+}
+
+<div>
+  <a
+    class="c0"
+    href="https://dummy-link-url"
+  >
+    link-text
+  </a>
+</div>
+`;
+
+exports[`<Link /> should render successfully as a button 1`] = `
+.c0 {
+  display: block;
+  color: white;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+  background-color: #3e8efa;
+  text-transform: uppercase;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 3px;
+}
+
+<div>
+  <a
+    class="c0"
+    href="https://dummy-link-url"
+  >
+    link-text
+  </a>
+</div>
+`;
