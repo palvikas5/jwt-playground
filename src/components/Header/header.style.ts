@@ -9,8 +9,12 @@ const StyledHeader = styled.header`
   padding-bottom: 15px;
 `;
 
-const HeaderTitle = styled.div`
+const HeaderTitle = styled.a`
   font-size: 2.5rem;
+  display: inline-block;
+  padding: 10px 0;
+  color: inherit;
+  text-decoration: none;
 `;
 
 export { StyledHeaderContainer, StyledHeader, HeaderTitle };

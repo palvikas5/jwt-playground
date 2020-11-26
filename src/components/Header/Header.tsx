@@ -1,4 +1,5 @@
 import React from 'react';
+import NextLink from 'next/link';
 import {
   StyledHeaderContainer,
   StyledHeader,
@@ -9,7 +10,9 @@ const Header = () => {
   return (
     <StyledHeaderContainer>
       <StyledHeader className='container'>
-        <HeaderTitle>JWT</HeaderTitle>
+        <NextLink href='/' passHref>
+          <HeaderTitle>JWT</HeaderTitle>
+        </NextLink>
       </StyledHeader>
     </StyledHeaderContainer>
   );
